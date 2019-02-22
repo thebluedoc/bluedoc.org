@@ -1,42 +1,44 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
+import { Link } from '../i18n'
+import React from 'react'
+import { FormattedMessage } from 'react-intl'
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
+import Language from './language'
+import cn from './header.module.css'
+
+const menuLinks = [
+  {
+    name: 'Enterprise',
+    link: '/enterprise/'
+  },
+  {
+    name: 'Pricing',
+    link: '/pricing/'
+  },
+  {
+    name: 'About',
+    link: '/about/'
+  },
+  {
+    name: 'Help',
+    link: '/help/'
+  }
+]
+
+
+const Header = () => (
+  <header className={`wrap-container ${cn.header}`}>
+    <nav className={cn.nav}>
+      <Link to='/' className={cn.logo}>Bluedoc</Link>
+      {
+        menuLinks.map(({link, name}) => 
+          <Link className={cn.link} key={link} to={link} activeClassName='active'>
+            <FormattedMessage id={`Header.${name}`}/>
+          </Link>
+        )
+      }
+    </nav>
+    <Language />
   </header>
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header

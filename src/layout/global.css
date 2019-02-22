@@ -1,0 +1,15 @@
+.wrap-container {
+  max-width: 1000px;
+  width: 1000px;
+  overflow: hidden;
+  margin: auto;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active{
+  text-decoration: none;
+  color:inherit;
+}
