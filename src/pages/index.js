@@ -1,9 +1,9 @@
 import React from "react"
 import { FormattedMessage } from 'react-intl'
-import { withIntl, Link } from '../i18n'
+import { withIntl } from '../i18n'
 
 import Layout from "../layout"
-import Image from "../components/image"
+// import Image from "../components/image"
 import SEO from "../components/seo"
 import cn from './index.module.css';
 
