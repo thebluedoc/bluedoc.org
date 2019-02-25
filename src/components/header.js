@@ -28,7 +28,7 @@ const menuLinks = [
 const Header = () => (
   <header className={`wrap-container ${cn.header}`}>
     <nav className={cn.nav}>
-      <Link to='/' className={cn.logo}>Bluedoc</Link>
+      <Link to='/' className={cn.logo}>BlueDoc</Link>
       {
         menuLinks.map(({link, name}) => 
           <Link className={cn.link} key={link} to={link} activeClassName='active'>

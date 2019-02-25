@@ -10,11 +10,11 @@ module.exports = {
   Home: {
     Section1: {
       Title: 'Elegant and efficient documents\nwithout the effort',
-      SubTitle: 'Bluedoc is a modern workspace to reduce busywork\n—so you can focus on the things that matter'
+      SubTitle: 'BlueDoc is a modern workspace to reduce busywork\n—so you can focus on the things that matter'
     }, 
     Section2: {
-      Title: 'Bluedoc is built for Doc-editor like you',
-      SubTitle: 'With powerful features,an intuitive interface and an expansive plugin ecosystem, Bluedoc lets you create your best work\n—from your earliest ideas, through to final Docs',
+      Title: 'BlueDoc is built for Doc-editor like you',
+      SubTitle: 'With powerful features,an intuitive interface and an expansive plugin ecosystem, BlueDoc lets you create your best work\n—from your earliest ideas, through to final Docs',
       Lists: [
         {
           Title: 'Run you private docs',
@@ -35,7 +35,7 @@ module.exports = {
           Des: 'The interface fades away the moment you start typing, leaving you alone with your work'
         }, {
           Title: 'Markdown, keyboard shortcuts',
-          Des: 'You can access all of Bluedoc’s features  from your fingertips, so you can stay in flow'
+          Des: 'You can access all of BlueDoc’s features  from your fingertips, so you can stay in flow'
         }, {
           Title: 'WYSIWYG',
           Des: 'A powerful yet beautifully simple editor your team will love'
@@ -61,7 +61,7 @@ module.exports = {
       ]
     },
     Section6: {
-      Title: 'Extend Bluedoc with...'
+      Title: 'Extend BlueDoc with...'
     },
     Section7: {
       Title: 'Get started today！',
