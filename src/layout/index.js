@@ -6,11 +6,13 @@ import 'normalize.css'
 import './global.css'
 
 import Header from "../components/header"
+import Footer from "../components/footer"
 
-const Layout = ({ full = false, children }) => (
+const Layout = ({ children }) => (
   <>
     <Header />
     <main>{children}</main>
+    <Footer />
   </>
 )
 

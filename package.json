@@ -10,11 +10,13 @@
     "gatsby-plugin-manifest": "^2.0.18",
     "gatsby-plugin-offline": "^2.0.24",
     "gatsby-plugin-react-helmet": "^3.0.6",
+    "gatsby-plugin-sass": "^2.0.10",
     "gatsby-plugin-sharp": "^2.0.21",
     "gatsby-source-filesystem": "^2.0.21",
     "gatsby-transformer-sharp": "^2.1.14",
     "gh-pages": "^2.0.1",
     "intl": "^1.2.5",
+    "node-sass": "^4.11.0",
     "normalize.css": "^8.0.1",
     "prop-types": "^15.7.2",
     "react": "^16.8.2",
@@ -22,7 +24,10 @@
     "react-helmet": "^5.2.0",
     "react-intl": "^2.8.0"
   },
-  "keywords": ["gatsby", "bluedoc"],
+  "keywords": [
+    "gatsby",
+    "bluedoc"
+  ],
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
