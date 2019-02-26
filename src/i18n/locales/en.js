@@ -4,68 +4,65 @@ module.exports = {
     Pricing: 'Pricing',
     About: 'About',
     Help: 'Help',
-    SignIn: 'Sign In',
+    LogIn: 'Log In',
     SignUp: 'Sign Up',
   },
   Home: {
     Section1: {
-      Title: 'Elegant and efficient documents\nwithout the effort',
-      SubTitle: 'BlueDoc is a modern workspace to reduce busywork\n—so you can focus on the things that matter'
+      Title: 'BlueDoc, Your One-Stop \nFile Management Platform',
+      SubTitle: 'BlueDoc is an enterprise file management platform that allows sharing, creating and editing your files with your co-workers in real time. '
     }, 
     Section2: {
-      Title: 'BlueDoc is built for Doc-editor like you',
-      SubTitle: 'With powerful features,an intuitive interface and an expansive plugin ecosystem, BlueDoc lets you create your best work\n—from your earliest ideas, through to final Docs',
+      Title: 'BlueDoc is designed as a business solution. ',
+      SubTitle: 'With comprehensive functions and intuitive interface, BlueDoc helps you achieve the best working results. ',
       Lists: [
         {
-          Title: 'Run you private docs',
-          Des: 'The most secure way to creat, edit and collaborate on documents for you and your team'
+          Title: 'Safe Archives',
+          Des: 'BlueDoc ensures a secure archive of your files. You can choose to upload your files to either the cloud or your company\'s intranet. '
         }, {
-          Title: 'Rich embeds, integrated and applications',
-          Des: 'Run your entire business with 10+ integrated applications. Embed external web content: videos, code snippets and more...'
+          Title: 'Smart Organization',
+          Des: 'BlueDoc organizes your files according to projects or teams. '
         }, {
-          Title: 'Bring clarity to your team',
-          Des: 'With one tool, everyone sees the whole picture'
+          Title: 'Standardized File Directory',
+          Des: 'BlueDoc has a standardized directory for your files. You can find important information faster. '
         }
       ]
     },
     Section3: {
       Lists: [
         {
-          Title: 'Stay focused, a simpler workflow for docs',
-          Des: 'The interface fades away the moment you start typing, leaving you alone with your work'
+          Title: 'Handy File Editing Mode',
+          Des: 'BlueDoc adopts an intuitive interface, allowing you to edit and create files with ease. '
         }, {
-          Title: 'Markdown, keyboard shortcuts',
-          Des: 'You can access all of BlueDoc’s features  from your fingertips, so you can stay in flow'
+          Title: 'Markdown Style Enabled',
+          Des: 'BlueDoc supports Markdown shortcuts. People who are familiar with Markdown will pick up BlueDoc editing easily.'
         }, {
-          Title: 'WYSIWYG',
-          Des: 'A powerful yet beautifully simple editor your team will love'
+          Title: 'Complete Document History',
+          Des: 'BlueDoc keeps a complete history of revisions, allowing you to recover or cancel your amendments at a later time. '
         }
       ]
     }, 
     Section4: {
-      Title: 'Create powerful pages',
-      SubTitle: 'Grab one of our handy templates and make it your own with images, gifts and emojis',
+      Title: 'Well-designed layout.',
+      SubTitle: 'Different from other documenting tools, BlueDoc is designed for online editing and reading, hence better compatible with the web browser. ',
     },
     Section5: {
       Lists: [
         {
-          Title: '150B+',
-          Des: 'Repositories worldwide'
+          Title: 'Support Markdown Import',
+          Des: 'Markdown import is available, allowing you to import your existing contents quickly in one go.'
         }, {
-          Title: '18',
-          Des: 'Integrated applications'
-        }, {
-          Title: '20M+',
-          Des: 'Business & organizations worldwide'
+          Title: 'Support PDF/Markdown Export',
+          Des: 'BlueDoc allows you to export your contents in PDF or Markdown format.'
         }
       ]
     },
     Section6: {
-      Title: 'Extend BlueDoc with...'
+      Title: 'More functions available for exploration.'
     },
     Section7: {
-      Title: 'Get started today！',
-      SubTitle: 'It only takes a few minutes to take control of your work future. Sign up now to start and It’s free and works across',
+      Title: 'Try BlueDoc Now',
+      SubTitle: 'Take your work under control. Register now to start your free trial. Support multiple devices.',
     }
   }
 }

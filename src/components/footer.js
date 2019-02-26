@@ -5,9 +5,9 @@ import cn from './header.module.css'
 
 const Footer = () => (
   <footer className={cn.wrap}>
-    <div className={`wrap-container ${cn.header}`}>
-      footer
-    </div>
+    <h3 className={`wrap-container ${cn.header}`}>
+      底部内容 待补充
+    </h3>
   </footer>
 )
 

@@ -51,12 +51,20 @@ h3.title {
 .section1 {
   height: 350px;
   text-align: left;
-  background: url(https://via.placeholder.com/545x347) right center no-repeat;
+  position: relative;
   .title {
     margin: 100px 0 24px;
   }
   .subTitle {
     width: 390px;
+  }
+  .banner {
+    width: 545px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
   }
 }
 
@@ -80,7 +88,14 @@ h3.title {
 }
 
 .section3 {
-  background: url(https://via.placeholder.com/317x260) 63px center no-repeat;
+  position: relative;
+  .banner {
+    position: absolute;
+    width: 317px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
   ul {
     text-align: left;
     margin-left: 50%;
@@ -108,6 +123,7 @@ h3.title {
 }
 
 .section5 {
+  padding: 40px 0;
   background: #4699FC;
   color: #FFFFFF;
   ul {

@@ -56,9 +56,6 @@ module.exports = {
           Title: "PDF / Markdown 导出",
           Des: "当你需要对外传播的时候，PDF 或 Markdown 打包导出能给你带来很大的帮助",
         },
-        {
-          Title: ""
-        }
       ]
     },
     Section6: {
