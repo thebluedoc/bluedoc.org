@@ -17,10 +17,6 @@ const menuLinks = [
   {
     name: 'About',
     link: '/about/'
-  },
-  {
-    name: 'Help',
-    link: '/help/'
   }
 ]
 
@@ -37,6 +33,9 @@ const Header = () => (
             </Link>
           )
         }
+        <a className={cn.lnk} href="https://bluedoc.io/bluedoc/help">
+          <FormattedMessage id="Header.Help"/>
+        </a>
       </nav>
       <Language />
     </div>
