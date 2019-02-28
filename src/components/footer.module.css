@@ -1,0 +1,13 @@
+.wrap {
+  background: #F2F4F5;
+}
+.footer {
+  padding: 80px 0;
+}
+.links {
+  float: right;
+}
+.link {
+  margin-right: 30px;
+  color: #666;
+}

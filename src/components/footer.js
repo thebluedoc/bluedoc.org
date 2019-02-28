@@ -1,13 +1,16 @@
 import React from 'react'
-
-import cn from './header.module.css'
-
+import cn from './footer.module.css'
 
 const Footer = () => (
   <footer className={cn.wrap}>
-    <h3 className={`wrap-container ${cn.header}`}>
-      底部内容 待补充
-    </h3>
+    <div className={`wrap-container ${cn.footer}`}>
+      <span className={cn.copyright}>© 2019 Bluedoc. All rights reserved.</span>
+      <div className={cn.links}>
+        <a className={cn.link} href="#">Feedback</a>
+        <a className={cn.link} href="#">Help</a>
+        <a className={cn.link} href="#">About Bluedoc</a>
+      </div>
+    </div>
   </footer>
 )
 

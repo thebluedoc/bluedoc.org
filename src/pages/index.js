@@ -9,7 +9,11 @@ import SEO from "../components/seo"
 import cn from './index.module.scss';
 
 import banner3 from '../images/home/banner3.png';
+import banner4 from '../images/home/banner4.png';
+import banner6 from '../images/home/banner6.png';
 import banner7 from '../images/home/banner7.png';
+import markdown_export from '../images/home/markdown_export.png';
+import markdown_import from '../images/home/markdown_import.png';
 
 const IndexPage = () => (
   <StaticQuery 
@@ -67,26 +71,18 @@ const IndexPage = () => (
             <h2 className={cn.title}><FormattedMessage id="Home.Section4.Title"/></h2>
             <p className={cn.subTitle}><FormattedMessage id="Home.Section4.SubTitle"/></p>
           </div>
-          <ul>
-            <li>
-              <img src="https://via.placeholder.com/107"></img>
-            </li>
-            <li>
-              <img src="https://via.placeholder.com/107"></img>
-            </li>
-            <li>
-              <img src="https://via.placeholder.com/107"></img>
-            </li>
-          </ul>
+          <img className={cn.banner} src={banner4} alt=""></img>
         </section>
         <section className={cn.section5}>
           <div className="wrap-container ">
             <ul>
               <li>
+                <img src={markdown_import} alt=""></img>
                 <h3 className={cn.title}><FormattedMessage id="Home.Section5.Lists.0.Title"/></h3>
                 <p className={cn.des}><FormattedMessage id="Home.Section5.Lists.0.Des"/></p>
               </li>
               <li>
+                <img src={markdown_export} alt=""></img>
                 <h3 className={cn.title}><FormattedMessage id="Home.Section5.Lists.1.Title"/></h3>
                 <p className={cn.des}><FormattedMessage id="Home.Section5.Lists.1.Des"/></p>
               </li>
@@ -96,12 +92,13 @@ const IndexPage = () => (
         <section className={cn.section6}>
           <div className="wrap-container ">
             <h2 className={cn.title}><FormattedMessage id="Home.Section6.Title"/></h2>
+            <img className={cn.banner} src={banner6} alt=""></img>
           </div>
         </section>
         <section className={`wrap-container ${cn.section7}`}>
           <h2 className={cn.title}><FormattedMessage id="Home.Section7.Title"/></h2>
           <p className={cn.subTitle}><FormattedMessage id="Home.Section7.SubTitle"/></p>
-          <img src={banner7} alt=""></img>
+          <img className={cn.banner} src={banner7} alt=""></img>
         </section>
       </Layout>
     )}

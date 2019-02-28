@@ -28,7 +28,7 @@ h3.title {
   white-space: pre-line;
   font-size: 16px;
   color: #666;
-  line-height: 30px;
+  line-height: 23px;
 }
 
 .section1,
@@ -59,7 +59,7 @@ h3.title {
     width: 390px;
   }
   .banner {
-    width: 545px;
+    width: 557px;
     position: absolute;
     right: 0;
     top: 50%;
@@ -91,7 +91,7 @@ h3.title {
   position: relative;
   .banner {
     position: absolute;
-    width: 317px;
+    width: 383px;
     left: 0;
     top: 50%;
     transform: translateY(-50%);
@@ -109,6 +109,9 @@ h3.title {
 .section4 {
   .subTitle {
     margin-bottom: 42px;
+  }
+  .banner {
+    width: 426px;
   }
   ul {
     list-style: none;
@@ -132,6 +135,10 @@ h3.title {
     justify-content: space-around;
     margin: 0;
     padding: 0;
+    img {
+      width: 171px;
+      margin-bottom: 20px;
+    }
     li {
       width: 30%;
     }
@@ -141,7 +148,16 @@ h3.title {
   }
 }
 
+.section6 {
+  .banner {
+    width: 346px;
+  }
+}
+
 .section7 {
+  .banner {
+    width: 393px;
+  }
   .subTitle {
     margin-bottom: 42px;
   }
