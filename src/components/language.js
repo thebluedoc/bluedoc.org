@@ -1,7 +1,8 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
+import Dropdown from './dropdown'
 
-class Language extends Component {
+class Language extends PureComponent {
   static contextTypes = {
     language: PropTypes.object,
   }
@@ -17,15 +18,10 @@ class Language extends Component {
     })
   }
 
-  handleChange = event => {
+  handleChange = (value) => {
     const { language } = this.context
     const { originalPath } = language
-    const { value } = event.target
-
-    if (value === this.state.value) {
-      return
-    }
-
+    
     this.setState({ value }, () => {
       localStorage.setItem('language', value)
       window.location.href = `/${value}${originalPath}`
@@ -41,13 +37,12 @@ class Language extends Component {
     }
 
     return (
-      <select value={value} onChange={this.handleChange}>
-        {languages.map(({ value, text }) => (
-          <option key={value} value={value}>
-            {text}
-          </option>
-        ))}
-      </select>
+      <Dropdown
+        onChange={this.handleChange}
+        options={languages}
+        value={value}
+        desLabel={'Language'}
+      />
     )
   }
 }

@@ -1,0 +1,62 @@
+.wrap {
+  position: relative;
+  font-size: 13px;
+  color: #777;
+  user-select: none;
+  
+  .label {
+    cursor: pointer;
+    padding: 9px 0;
+  }
+
+  .arrow {
+    margin-left: 5px;
+    font-size: 10px;
+    transition: all .1s ease;
+    &.open {
+      transform: rotate(180deg);
+    }
+  }
+
+  .optionsBox {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border: 1px solid #D9D9D9;
+    border-radius: 6px;
+    padding: 6px 0;
+    margin: 0;
+    list-style: none;
+    line-height: 32px;
+    min-width: 100px;
+    background: #FFF;
+    font-size: 12px;
+  }
+
+  .des {
+    padding: 0 14px;
+    color: #BBBBBB;
+  }
+
+  .item {
+    padding: 0 14px;
+    color: #111111;
+    cursor: pointer;
+    position: relative;
+    text-indent: 20px;
+    white-space: nowrap;
+    &:hover {
+      background: #F5F5F5;
+    }
+    .selected {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  .hidden {
+    display: none;
+  }
+}

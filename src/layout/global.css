@@ -1,7 +1,6 @@
 .wrap-container {
   max-width: 1000px;
   width: 1000px;
-  overflow: hidden;
   margin: auto;
 }
 
@@ -38,4 +37,11 @@ a:active{
 body {
   font-family: 'themefont', 'PingFang SC', 'Microsoft YaHei', '微软雅黑', 'Helvetica Neue', Helvetica,
   'Hiragino Sans GB', Arial, sans-serif;
+}
+
+.icon {
+  width: 1em; height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
 }
