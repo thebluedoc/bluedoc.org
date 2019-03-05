@@ -24,6 +24,9 @@ const IndexPage = () => (
         <section className={`wrap-container ${cn.section1}`}>
           <h1 className={cn.title}><FormattedMessage id="Home.Section1.Title"/></h1>
           <p className={cn.subTitle}><FormattedMessage id="Home.Section1.SubTitle"/></p>
+          <a href="https://bluedoc.io/account/sign_up" className={cn.btn}>
+            <FormattedMessage id="Home.Section1.Btn"/>
+          </a>
           <Img className={cn.banner} style={{position: 'absolute'}} fluid={data.banner1.childImageSharp.fluid}/>
         </section>
         <section className={`${cn.section2}`}>
@@ -99,6 +102,9 @@ const IndexPage = () => (
           <h2 className={cn.title}><FormattedMessage id="Home.Section7.Title"/></h2>
           <p className={cn.subTitle}><FormattedMessage id="Home.Section7.SubTitle"/></p>
           <img className={cn.banner} src={banner7} alt=""></img>
+          <a href="https://bluedoc.io/account/sign_in" className={cn.btn}>
+            <FormattedMessage id="Home.Section7.Btn"/>
+          </a>
         </section>
       </Layout>
     )}

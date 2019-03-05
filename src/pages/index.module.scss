@@ -24,6 +24,16 @@ h3.title {
   color: #666;
 }
 
+.btn {
+  display: inline-block;
+  border: 1px solid #999;
+  border-radius: 2px;
+  color: #111;
+  font-size: 16px;
+  padding: 11px 20px;
+  text-align: center;
+}
+
 .subTitle {
   white-space: pre-line;
   font-size: 16px;
@@ -53,10 +63,11 @@ h3.title {
   text-align: left;
   position: relative;
   .title {
-    margin: 100px 0 24px;
+    margin: 30px 0 24px;
   }
   .subTitle {
     width: 390px;
+    margin-bottom: 50px;
   }
   .banner {
     width: 557px;
@@ -65,6 +76,9 @@ h3.title {
     top: 50%;
     transform: translateY(-50%);
     z-index: -1;
+  }
+  .btn {
+    width: 280px;
   }
 }
 
@@ -157,8 +171,14 @@ h3.title {
 .section7 {
   .banner {
     width: 393px;
+    margin-bottom: 40px;
   }
   .subTitle {
     margin-bottom: 42px;
+  }
+  .btn {
+    display: block;
+    width: 280px;
+    margin: auto;
   }
 }

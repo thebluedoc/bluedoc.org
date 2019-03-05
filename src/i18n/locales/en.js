@@ -10,7 +10,8 @@ module.exports = {
   Home: {
     Section1: {
       Title: 'BlueDoc, Your One-Stop File \nManagement Platform',
-      SubTitle: 'BlueDoc is an enterprise file management platform that allows sharing, creating and editing your files with your co-workers in real time. '
+      SubTitle: 'BlueDoc is an enterprise file management platform that allows sharing, creating and editing your files with your co-workers in real time. ',
+      Btn: 'Sign Up For Free'
     }, 
     Section2: {
       Title: 'BlueDoc is designed as a business solution. ',
@@ -63,6 +64,7 @@ module.exports = {
     Section7: {
       Title: 'Try BlueDoc Now',
       SubTitle: 'Take your work under control. Register now to start your free trial. Support multiple devices.',
+      Btn: 'Get Start'
     }
   }
 }
