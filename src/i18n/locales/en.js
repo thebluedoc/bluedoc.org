@@ -66,5 +66,9 @@ module.exports = {
       SubTitle: 'Take your work under control. Register now to start your free trial. Support multiple devices.',
       Btn: 'Get Start'
     }
+  },
+  Footer: {
+    Help: 'Help',
+    About: 'About BlueDoc'
   }
 }

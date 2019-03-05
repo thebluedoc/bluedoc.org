@@ -35,17 +35,17 @@ const IndexPage = () => (
             <p className={cn.subTitle}><FormattedMessage id="Home.Section2.SubTitle"/></p>
             <ul>
               <li>
-                <img src="https://via.placeholder.com/107"></img>
+                <img alt="" src="https://via.placeholder.com/107"></img>
                 <h3 className={cn.title}><FormattedMessage id="Home.Section2.Lists.0.Title"/></h3>
                 <p className={cn.des}><FormattedMessage id="Home.Section2.Lists.0.Des"/></p>
               </li>
               <li>
-                <img src="https://via.placeholder.com/107"></img>
+                <img alt="" src="https://via.placeholder.com/107"></img>
                 <h3 className={cn.title}><FormattedMessage id="Home.Section2.Lists.1.Title"/></h3>
                 <p className={cn.des}><FormattedMessage id="Home.Section2.Lists.1.Des"/></p>
               </li>
               <li>
-                <img src="https://via.placeholder.com/107"></img>
+                <img alt="" src="https://via.placeholder.com/107"></img>
                 <h3 className={cn.title}><FormattedMessage id="Home.Section2.Lists.2.Title"/></h3>
                 <p className={cn.des}><FormattedMessage id="Home.Section2.Lists.2.Des"/></p>
               </li>

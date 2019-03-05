@@ -9,7 +9,7 @@ module.exports = {
   },
   Home: {
     Section1: {
-      Title: '优雅高效，轻松编写、分享、管理文档',
+      Title: '优雅高效\n轻松编写、分享、管理文档',
       SubTitle: 'BlueDoc 是一个用于解决企业内分散在各处的文档，通过统一平台的方式，将企业所有的文档汇聚在一起，形成一个便于交流、分享、协作的文档平台。',
       Btn: '免费注册'
     },
@@ -67,5 +67,9 @@ module.exports = {
       SubTitle: '只需几分钟即可掌控您的未来工作。现在注册开始，他是免费的，适用于许多设备',
       Btn: '开始'
     }
+  },
+  Footer: {
+    Help: '帮助',
+    About: '关于 BlueDoc'
   }
 }

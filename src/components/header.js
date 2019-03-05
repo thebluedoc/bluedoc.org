@@ -1,6 +1,8 @@
-import { Link } from '../i18n'
-import React from 'react'
+import React, { PureComponent } from 'react'
+import PropTypes from 'prop-types'
 import { FormattedMessage } from 'react-intl'
+import { languageSuffix } from '../utils'
+import { Link } from '../i18n'
 
 import Language from './language'
 import cn from './header.module.scss'
@@ -15,34 +17,44 @@ const menuLinks = [
   //   name: 'Pricing',
   //   link: '/pricing/'
   // },
-  // {
-  //   name: 'About',
-  //   link: '/about/'
-  // }
 ]
 
+class Header extends PureComponent {
+  constructor(props, context) {
+    super(props);
+    this.suffix = languageSuffix(context.language.locale);
+  }
+  static contextTypes = {
+    language: PropTypes.object,
+  }
 
-const Header = () => (
-  <header className={cn.wrap}>
-    <div className={`wrap-container ${cn.header}`}>
-      <Link to='/' className={cn.logo}>
-        <img src={logo}></img>
-      </Link>
-      <nav className={cn.nav}>
-        {
-          menuLinks.map(({link, name}) => 
-            <Link className={cn.link} key={link} to={link} activeClassName='active'>
-              <FormattedMessage id={`Header.${name}`}/>
-            </Link>
-          )
-        }
-        <a className={cn.lnk} href="https://bluedoc.io/bluedoc/help">
-          <FormattedMessage id="Header.Help"/>
-        </a>
-      </nav>
-      <Language />
-    </div>
-  </header>
-)
+  render() {
+    return (
+      <header className={cn.wrap}>
+        <div className={`wrap-container ${cn.header}`}>
+          <Link to='/' className={cn.logo}>
+            <img src={logo} alt="logo"></img>
+          </Link>
+          <nav className={cn.nav}>
+            {
+              menuLinks.map(({link, name}) => 
+                <Link className={cn.link} key={link} to={link} activeClassName='active'>
+                  <FormattedMessage id={`Header.${name}`}/>
+                </Link>
+              )
+            }
+            <a className={cn.link} href={`https://bluedoc.io/bluedoc/help${this.suffix}/about`}>
+              <FormattedMessage id="Header.About"/>
+            </a>
+            <a className={cn.link} href={`https://bluedoc.io/bluedoc/help${this.suffix}`}>
+              <FormattedMessage id="Header.Help"/>
+            </a>
+          </nav>
+          <Language />
+        </div>
+      </header>
+    )
+  }
+}
 
 export default Header
