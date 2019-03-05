@@ -1,7 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { injectIntl } from 'react-intl'
-import '../../static/iconfont.js';
 
 import 'normalize.css'
 import './global.css'
