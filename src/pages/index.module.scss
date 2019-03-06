@@ -1,21 +1,29 @@
 .title {
   white-space: pre-line;
   color: #111;
+  margin: 0;
+}
+
+p {
+  margin: 0;
 }
 
 h1.title {
   font-size: 30px;
   line-height: 40px;
+  
 }
 
 h2.title {
   font-size: 24px;
   line-height: 33px;
+  margin-bottom: 17px;
 }
 
 h3.title {
   font-size: 16px;
   line-height: 23px;
+  margin-bottom: 10px;
 }
 
 .des {
@@ -32,6 +40,10 @@ h3.title {
   font-size: 16px;
   padding: 11px 20px;
   text-align: center;
+  &:hover {
+    border-color: #333333;
+    color: #111;
+  }
 }
 
 .subTitle {
@@ -83,11 +95,12 @@ h3.title {
 }
 
 .section2 {
-  .title {
-    margin-bottom: 17px;
+  img {
+    margin-bottom: 15px;
+    width: 98px;
   }
   .subTitle {
-    margin-bottom: 36px;
+    margin-bottom: 55px;
   }
   ul {
     list-style: none;
@@ -96,7 +109,7 @@ h3.title {
     margin: 0;
     padding: 0;
     li {
-      width: 30%;
+      width: 25%;
     }
   }
 }
@@ -127,20 +140,10 @@ h3.title {
   .banner {
     width: 426px;
   }
-  ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    margin: 0;
-    padding: 0;
-    li {
-      width: 30%;
-    }
-  }
 }
 
 .section5 {
-  padding: 40px 0;
+  padding: 70px 0;
   background: #4699FC;
   color: #FFFFFF;
   ul {
@@ -151,7 +154,8 @@ h3.title {
     padding: 0;
     img {
       width: 171px;
-      margin-bottom: 20px;
+      height: 161px;
+      margin-bottom: 25px;
     }
     li {
       width: 30%;

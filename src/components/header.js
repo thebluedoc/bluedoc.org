@@ -24,6 +24,7 @@ class Header extends PureComponent {
     super(props);
     this.suffix = languageSuffix(context.language.locale);
   }
+
   static contextTypes = {
     language: PropTypes.object,
   }
@@ -33,7 +34,7 @@ class Header extends PureComponent {
       <header className={cn.wrap}>
         <div className={`wrap-container ${cn.header}`}>
           <Link to='/' className={cn.logo}>
-            <img src={logo} alt="logo"></img>
+            <img src={logo} alt="logo" />
           </Link>
           <nav className={cn.nav}>
             {

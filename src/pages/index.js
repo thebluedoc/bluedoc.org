@@ -14,6 +14,9 @@ import banner6 from '../images/home/banner6.png';
 import banner7 from '../images/home/banner7.png';
 import markdown_export from '../images/home/markdown_export.png';
 import markdown_import from '../images/home/markdown_import.png';
+import m2_organize from '../images/home/m2_organize.png';
+import m2_safe from '../images/home/m2_safe.png';
+import m2_tablet from '../images/home/m2_tablet.png';
 
 const IndexPage = () => (
   <StaticQuery 
@@ -35,17 +38,17 @@ const IndexPage = () => (
             <p className={cn.subTitle}><FormattedMessage id="Home.Section2.SubTitle"/></p>
             <ul>
               <li>
-                <img alt="" src="https://via.placeholder.com/107"></img>
+                <img alt="" src={m2_safe} />
                 <h3 className={cn.title}><FormattedMessage id="Home.Section2.Lists.0.Title"/></h3>
                 <p className={cn.des}><FormattedMessage id="Home.Section2.Lists.0.Des"/></p>
               </li>
               <li>
-                <img alt="" src="https://via.placeholder.com/107"></img>
+                <img alt="" src={m2_organize} />
                 <h3 className={cn.title}><FormattedMessage id="Home.Section2.Lists.1.Title"/></h3>
                 <p className={cn.des}><FormattedMessage id="Home.Section2.Lists.1.Des"/></p>
               </li>
               <li>
-                <img alt="" src="https://via.placeholder.com/107"></img>
+                <img alt="" src={m2_tablet} />
                 <h3 className={cn.title}><FormattedMessage id="Home.Section2.Lists.2.Title"/></h3>
                 <p className={cn.des}><FormattedMessage id="Home.Section2.Lists.2.Des"/></p>
               </li>
@@ -53,7 +56,7 @@ const IndexPage = () => (
           </div>
         </section>
         <section className={`wrap-container ${cn.section3}`}>
-          <img className={cn.banner} src={banner3} alt=""></img>
+          <img className={cn.banner} src={banner3} alt="" />
           <ul>
             <li>
               <h3 className={cn.title}><FormattedMessage id="Home.Section3.Lists.0.Title"/></h3>
@@ -74,18 +77,18 @@ const IndexPage = () => (
             <h2 className={cn.title}><FormattedMessage id="Home.Section4.Title"/></h2>
             <p className={cn.subTitle}><FormattedMessage id="Home.Section4.SubTitle"/></p>
           </div>
-          <img className={cn.banner} src={banner4} alt=""></img>
+          <img className={cn.banner} src={banner4} alt="" />
         </section>
         <section className={cn.section5}>
           <div className="wrap-container ">
             <ul>
               <li>
-                <img src={markdown_import} alt=""></img>
+                <img src={markdown_import} alt="" />
                 <h3 className={cn.title}><FormattedMessage id="Home.Section5.Lists.0.Title"/></h3>
                 <p className={cn.des}><FormattedMessage id="Home.Section5.Lists.0.Des"/></p>
               </li>
               <li>
-                <img src={markdown_export} alt=""></img>
+                <img src={markdown_export} alt="" />
                 <h3 className={cn.title}><FormattedMessage id="Home.Section5.Lists.1.Title"/></h3>
                 <p className={cn.des}><FormattedMessage id="Home.Section5.Lists.1.Des"/></p>
               </li>
@@ -95,13 +98,13 @@ const IndexPage = () => (
         <section className={cn.section6}>
           <div className="wrap-container ">
             <h2 className={cn.title}><FormattedMessage id="Home.Section6.Title"/></h2>
-            <img className={cn.banner} src={banner6} alt=""></img>
+            <img className={cn.banner} src={banner6} alt="" />
           </div>
         </section>
         <section className={`wrap-container ${cn.section7}`}>
           <h2 className={cn.title}><FormattedMessage id="Home.Section7.Title"/></h2>
           <p className={cn.subTitle}><FormattedMessage id="Home.Section7.SubTitle"/></p>
-          <img className={cn.banner} src={banner7} alt=""></img>
+          <img className={cn.banner} src={banner7} alt="" />
           <a href="https://bluedoc.io/account/sign_in" className={cn.btn}>
             <FormattedMessage id="Home.Section7.Btn"/>
           </a>

@@ -30,11 +30,10 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "start": "npm run develop",
+    "build": "gatsby clean && gatsby build",
+    "start": "gatsby develop",
     "serve": "gatsby serve",
-    "deploy": "gatsby build && gh-pages -d public",
+    "deploy": "npm run build && gh-pages -d public",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },
   "repository": {

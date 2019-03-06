@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import { injectIntl } from 'react-intl'
 
 import 'normalize.css'
-import './global.css'
+import './global.scss'
 
 import Header from "../components/header"
 import Footer from "../components/footer"
