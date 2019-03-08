@@ -6,7 +6,7 @@ import { Link } from '../i18n'
 
 import Language from './language'
 import cn from './header.module.scss'
-import logo from '../images/logo.svg';
+import logo from '../images/logo.png';
 
 const menuLinks = [
   // {
@@ -35,6 +35,8 @@ class Header extends PureComponent {
         <div className={`wrap-container ${cn.header}`}>
           <Link to='/' className={cn.logo}>
             <img src={logo} alt="logo" />
+            <span style={{color: '#165eff'}}>Blue</span>
+            <span style={{color: '#8b96ad'}}>Doc</span>
           </Link>
           <nav className={cn.nav}>
             {
