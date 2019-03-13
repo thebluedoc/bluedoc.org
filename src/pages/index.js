@@ -2,8 +2,7 @@ import React from "react"
 import { StaticQuery, graphql } from 'gatsby'
 import { FormattedMessage } from 'react-intl'
 import Img from 'gatsby-image'
-import { withIntl } from '../i18n'
-
+import { withIntl, Link } from '../i18n'
 import Layout from "../layout"
 import SEO from "../components/seo"
 import cn from './index.module.scss';
@@ -27,9 +26,9 @@ const IndexPage = () => (
         <section className={`wrap-container ${cn.section1}`}>
           <h1 className={cn.title}><FormattedMessage id="Home.Section1.Title"/></h1>
           <p className={cn.subTitle}><FormattedMessage id="Home.Section1.SubTitle"/></p>
-          <a href="https://bluedoc.io/account/sign_up" className={cn.btn}>
+          <Link to="/pricing" className={cn.btn}>
             <FormattedMessage id="Home.Section1.Btn"/>
-          </a>
+          </Link>
           <Img className={cn.banner} style={{position: 'absolute'}} fluid={data.banner1.childImageSharp.fluid}/>
         </section>
         <section className={`${cn.section2}`}>
@@ -105,9 +104,9 @@ const IndexPage = () => (
           <h2 className={cn.title}><FormattedMessage id="Home.Section7.Title"/></h2>
           <p className={cn.subTitle}><FormattedMessage id="Home.Section7.SubTitle"/></p>
           <img className={cn.banner} src={banner7} alt="" />
-          <a href="https://bluedoc.io/account/sign_in" className={cn.btn}>
+          <Link to="/pricing" className={cn.btn}>
             <FormattedMessage id="Home.Section7.Btn"/>
-          </a>
+          </Link>
         </section>
       </Layout>
     )}

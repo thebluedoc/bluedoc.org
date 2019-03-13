@@ -40,6 +40,10 @@ a:hover {
   src: url('/font/Soleil.otf') format('truetype');
 }
 
+main {
+  min-height: calc(100vh - 228px);
+}
+
 body {
   font-family: 'themefont', 'PingFang SC', 'Microsoft YaHei', '微软雅黑', 'Helvetica Neue', Helvetica,
   'Hiragino Sans GB', Arial, sans-serif;

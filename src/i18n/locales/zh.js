@@ -1,17 +1,18 @@
 module.exports = {
   Header: {
     Enterprise: '企业',
-    Pricing: '价格',
+    Pricing: '定价',
     About: '关于',
     Help: '帮助',
     LogIn: '登录',
-    SignUp: '注册'
+    SignUp: '注册',
+    Feedback: '反馈'
   },
   Home: {
     Section1: {
       Title: '优雅高效\n轻松编写、分享、管理文档',
       SubTitle: 'BlueDoc 是一个用于解决企业内分散在各处的文档，通过统一平台的方式，将企业所有的文档汇聚在一起，形成一个便于交流、分享、协作的文档平台。',
-      Btn: '免费注册'
+      Btn: '立即开始'
     },
     Section2: {
       Title: '为企业私有化部署而设计的文档管理工具',

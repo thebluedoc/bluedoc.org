@@ -13,10 +13,10 @@ const menuLinks = [
   //   name: 'Enterprise',
   //   link: '/enterprise/'
   // },
-  // {
-  //   name: 'Pricing',
-  //   link: '/pricing/'
-  // },
+  {
+    name: 'Pricing',
+    link: '/pricing/'
+  },
 ]
 
 class Header extends PureComponent {
@@ -46,11 +46,14 @@ class Header extends PureComponent {
                 </Link>
               )
             }
-            <a className={cn.link} href={`https://bluedoc.io/bluedoc/help${this.suffix}/about`}>
-              <FormattedMessage id="Header.About"/>
-            </a>
-            <a className={cn.link} href={`https://bluedoc.io/bluedoc/help${this.suffix}`}>
+            <a className={cn.link} href={`https://bluedoc.io/bluedoc/help${this.suffix}`} target="_blank">
               <FormattedMessage id="Header.Help"/>
+            </a>
+            <a className={cn.link} href="https://github.com/thebluedoc/bluedoc-feedback/issues/new" target="_blank">
+              <FormattedMessage id="Header.Feedback"/>
+            </a>
+            <a className={cn.link} href={`https://bluedoc.io/bluedoc/help${this.suffix}/about`} target="_blank">
+              <FormattedMessage id="Header.About"/>
             </a>
           </nav>
           <Language />
