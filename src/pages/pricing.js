@@ -69,7 +69,6 @@ const IndexPage = () => (
           </ul>
           <ul className={cx("list")}>
             <h3 className={cx("label")}>服务</h3>
-            <li>GitHub Issue 的方式技术支持</li>
             <li>2 个工作日内支持反馈，邮件、工单联系</li>
           </ul>
         </div>
