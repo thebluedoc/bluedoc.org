@@ -1,0 +1,61 @@
+@import '../styles/variable.scss';
+
+.wrap-container {
+  max-width: 1000px;
+  padding: 0 20px;
+  width: 100%;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: $primary;
+}
+
+@font-face {
+  font-family: 'themefont';
+  font-weight: 700;
+  unicode-range: U+0041-005A, U+0061-007A;
+  src: url('/font/Soleil-Bold.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'themefont';
+  font-weight: 100;
+  unicode-range: U+0041-005A, U+0061-007A;
+  src: url('/font/Soleil-Light.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'themefont';
+  font-weight: 400;
+  unicode-range: U+0041-005A, U+0061-007A;
+  src: url('/font/Soleil.otf') format('truetype');
+}
+
+main {
+  min-height: calc(100vh - 228px);
+}
+
+body {
+  font-family: 'themefont', 'PingFang SC', 'Microsoft YaHei', '微软雅黑', 'Helvetica Neue', Helvetica,
+    'Hiragino Sans GB', Arial, sans-serif;
+}
+
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+  cursor: pointer;
+}

@@ -1,0 +1,17 @@
+.wrap {
+  background: #F2F4F5;
+}
+
+.footer {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.links {
+  float: right;
+}
+
+.link {
+  margin-right: 30px;
+  color: #666;
+}
