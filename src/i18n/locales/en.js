@@ -89,26 +89,47 @@ module.exports = {
     About: "About BlueDoc"
   },
   Pricing: {
-    Title: "BlueDoc 专业版",
-    TitleDes: "开始使用 BlueDoc 构建你企业的私有化文档平台",
+    Title: "BlueDoc Professional",
+    TitleDes:
+      "Start using BlueDoc now to constrcut your own enterprise document platform",
     Des:
-      "在您决定购买之前，可以先尝试使用我们的在线服务(https://bluedoc.io)，里面涵盖了所有专业版功能。",
-    Features: "",
-    Service: "",
+      "Before purchasing our product, you can try our online version first. The online version has all pro features. ",
+    Features: "Features",
+    Service: "Service",
     Basic: {
       Title: "BASIC",
       Price: "Free",
       PriceDes: "",
-      Link: "",
-      Features: ["", ""],
-      Service: ["", ""]
+      Button: "Get Start",
+      Features: [
+        "No upper limit on number of users",
+        "Create unlimited number of groups and repositories",
+        "Allow multiple users to manage and maintain the group and the repository",
+        "What You See is What You Get document editors",
+        "Customized catalog editor",
+        "Support document history and recovery",
+        "Allow upload and insert of pictures, file and video clips ",
+        "Public and private mode for personal notes available",
+        "Document sharing",
+        "Zip or Git import in Markdwon format",
+        "Super admin management back-end",
+        "Support deployment of BlueDoc server within the enterprise"
+      ],
+      Service: ["Provide technical support using GitHub Issue"]
     },
     Pro: {
       Title: "PRO",
-      Price: "Free",
+      Price: "Comming Soon",
       PriceDes: "",
-      Link: "",
-      Features: ["", ""],
+      Button: "Apply for trial",
+      Features: [
+        "Include all features in Basic version",
+        "Export documents, notes and the whole repository in PDF format",
+        "Export repository in Zip file (similar to Markdown file exported in the GitBook sturcutre)",
+        "Soft delete recovery",
+        "View history of documents and notes",
+        "Support deployment of BlueDoc server within the enterprise"
+      ],
       Service: ["", ""]
     }
   }

@@ -5,16 +5,26 @@
   padding-bottom: 100px;
   color: #111;
   text-align: center;
+  background: url('../images/pricing/bg-mask.png') 0 0 no-repeat;
+  background-size: 100% auto;
 }
 
 .title {
   font-size: 36px;
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .des {
   color: #777;
+
+  a {
+    color: #111;
+
+    &:hover {
+      color: $primary;
+    }
+  }
 }
 
 .box-wrap {
@@ -22,12 +32,14 @@
 }
 
 .box {
+  background: #fff;
   padding: 40px;
   border: 1px solid #E5E5E5;
   border-radius: 6px;
   margin-bottom: 30px;
   width: 100%;
   box-sizing: border-box;
+
   &.pro {
     box-shadow: 0px 0px 20px #ECECEC;
   }
@@ -41,11 +53,14 @@
   color: #666;
   line-height: 1.4;
   margin-top: 0;
+
   &:not(:last-child) {
     margin-bottom: 40px;
+
     li {
       position: relative;
       padding-left: 15px;
+
       &::before {
         content: '';
         display: block;
@@ -59,11 +74,13 @@
       }
     }
   }
+
   .label {
     color: #111;
     font-size: 14px;
     margin-bottom: 12px;
   }
+
   li {
     margin-bottom: 12px;
   }

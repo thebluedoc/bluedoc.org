@@ -47,6 +47,7 @@
   "devDependencies": {
     "eslint-plugin-prettier": "^3.0.1",
     "gatsby-plugin-eslint": "^2.0.4",
+    "gatsby-plugin-google-analytics": "^2.0.17",
     "prettier": "^1.16.4"
   }
 }
