@@ -112,7 +112,7 @@ module.exports = {
         "超级管理员后台",
         "支持私有化单机部署"
       ],
-      Service: ["支持在企业内部部署 BlueDoc 服务"]
+      Service: ["通过 GitHub Issue 的方式支持"]
     },
     Pro: {
       Title: "专业版",
@@ -128,7 +128,7 @@ module.exports = {
         "文档、笔记的阅读记录查看",
         "支持私有化单机部署方案"
       ],
-      Service: ["2个工作日内支持反馈，邮件、工单联系"]
+      Service: ["2 个工作日内支持反馈，邮件、工单联系"]
     }
   }
 };
