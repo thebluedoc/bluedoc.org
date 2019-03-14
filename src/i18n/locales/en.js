@@ -130,7 +130,9 @@ module.exports = {
         "View history of documents and notes",
         "Support deployment of BlueDoc server within the enterprise"
       ],
-      Service: ["", ""]
+      Service: [
+        "Support feedbacks within 2 working days, contact via email or tickets"
+      ]
     }
   }
 };
