@@ -35,7 +35,7 @@ const IndexPage = () => (
               <FormattedMessage id="Pricing.Basic.Price" />
             </b>
             <a
-              href="https://github.com/thebluedoc/bluedoc/releases"
+              href="https://hub.docker.com/r/bluedoc/bluedoc"
               target="_blank"
               className={cx("btn", "btn-primary")}
               style={{ marginBottom: 60 }}
