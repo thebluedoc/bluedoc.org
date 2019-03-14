@@ -11,14 +11,23 @@ const cx = classnames.bind(styles);
 const IndexPage = () => (
   <Layout>
     <SEO title="Pricing" keywords={["bluedoc, pricing"]} />
-    <section className="wrap-container">
-      <h1 className={cx("title")}>Blue Doc 产品定价</h1>
-      <div className={cx("wrap")}>
-        <div className={cx("cell", "box")}>
+    <section className={cx("wrap-container", "wrap")}>
+      <h1 className={cx("title")}>Blue Doc 专业版</h1>
+      <p className={cx("des")} style={{ fontSize: 17, marginBottom: 60 }}>
+        开始使用 BlueDoc 构建你企业的私有化文档平台
+      </p>
+      <p className={cx("des")} style={{ fontSize: 14, marginBottom: 40 }}>
+        在您决定购买之前，可以先尝试使用我们的在线服务(https://bluedoc.io)，里面涵盖了所有专业版功能。
+      </p>
+      <div className={cx("boxWrap")}>
+        <div className={cx("box")}>
           <h2 className={cx("type")}>BASIC</h2>
           <b className={cx("price")}>Free</b>
-          <a className={cx("btn")}> 立即开始 </a>
+          <a className={cx("btn", "btn-primary")} style={{ marginBottom: 60 }}>
+            立即开始
+          </a>
           <ul className={cx("list")}>
+            <h3 className={cx("label")}>功能支持</h3>
             <li>最大用户数量不限</li>
             <li>无限的团队、知识库创建</li>
             <li>多人参与维护团队、知识库</li>
@@ -31,14 +40,20 @@ const IndexPage = () => (
             <li>基于 Markdown 格式的 Zip 或 Git 导入</li>
             <li>超级管理员后台</li>
             <li>支持私有化单机部署</li>
+          </ul>
+          <ul className={cx("list")}>
+            <h3 className={cx("label")}>服务</h3>
             <li>GitHub Issue 的方式技术支持</li>
           </ul>
         </div>
-        <div className={cx("cell", "box")}>
+        <div className={cx("box", "pro")}>
           <h2 className={cx("type")}>PRO</h2>
           <b className={cx("price")}>Comming Soon</b>
-          <a className={cx("btn")}> 申请试用 </a>
+          <a className={cx("btn", "btn-primary")} style={{ marginBottom: 60 }}>
+            申请试用
+          </a>
           <ul className={cx("list")}>
+            <h3 className={cx("label")}>功能支持</h3>
             <li>
               <b>包含上面 Basic 的所有功能</b>
             </li>
@@ -51,7 +66,11 @@ const IndexPage = () => (
             <li>软删除恢复功能</li>
             <li>文档、笔记的阅读记录查看</li>
             <li>支持私有化单机部署方案</li>
-            <li>服务：2 个工作日内支持反馈，邮件、工单联系</li>
+          </ul>
+          <ul className={cx("list")}>
+            <h3 className={cx("label")}>服务</h3>
+            <li>GitHub Issue 的方式技术支持</li>
+            <li>2 个工作日内支持反馈，邮件、工单联系</li>
           </ul>
         </div>
       </div>

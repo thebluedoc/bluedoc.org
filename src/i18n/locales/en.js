@@ -87,5 +87,29 @@ module.exports = {
   Footer: {
     Help: "Help",
     About: "About BlueDoc"
+  },
+  Pricing: {
+    Title: "BlueDoc 专业版",
+    TitleDes: "开始使用 BlueDoc 构建你企业的私有化文档平台",
+    Des:
+      "在您决定购买之前，可以先尝试使用我们的在线服务(https://bluedoc.io)，里面涵盖了所有专业版功能。",
+    Features: "",
+    Service: "",
+    Basic: {
+      Title: "BASIC",
+      Price: "Free",
+      PriceDes: "",
+      Link: "",
+      Features: ["", ""],
+      Service: ["", ""]
+    },
+    Pro: {
+      Title: "PRO",
+      Price: "Free",
+      PriceDes: "",
+      Link: "",
+      Features: ["", ""],
+      Service: ["", ""]
+    }
   }
 };

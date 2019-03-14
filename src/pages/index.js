@@ -32,7 +32,7 @@ const IndexPage = () => (
             <p className={cx("subTitle")}>
               <FormattedMessage id="Home.Section1.SubTitle" />
             </p>
-            <Link to="/pricing" className={cx("btn")}>
+            <Link to="/pricing" className={cx("btn", "large")}>
               <FormattedMessage id="Home.Section1.Btn" />
             </Link>
           </div>
@@ -165,7 +165,7 @@ const IndexPage = () => (
             <FormattedMessage id="Home.Section7.SubTitle" />
           </p>
           <img className={cx("banner")} src={banner7} alt="" />
-          <Link to="/pricing" className={cx("btn")}>
+          <Link to="/pricing" className={cx("btn", "large")}>
             <FormattedMessage id="Home.Section7.Btn" />
           </Link>
         </section>
