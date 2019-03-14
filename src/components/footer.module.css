@@ -2,7 +2,8 @@
   background: #F2F4F5;
 }
 .footer {
-  padding: 80px 0;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 .links {
   float: right;

@@ -1,35 +1,39 @@
 @import '../styles/index.scss';
 
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+@media (min-width: 768px) {
+  .wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  .box {
+    &:not(:last-child) {
+      margin-right: 80px;
+    }
+  }
+  .cell {
+    width: 0;
+    flex: 1;
+  }
 }
 
 .wrap {
   padding: 30px 0;
-  display: flex;
-  justify-content: space-between;
 }
 
 .box {
   padding: 20px 50px;
   border: 1px solid #e0e0e0;
-  &:not(:last-child) {
-    margin-right: 80px;
-  }
-
+  margin-bottom: 30px;
   ul {
-    li {
-      list-style-position: inside;
-      list-style-type: square;
-    }
+    padding: 0;
+    list-style-position: inside;
+    list-style-type: square;
   }
 }
 
 .cell {
-  width: 0;
-  flex: 1;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .list {
@@ -57,19 +61,4 @@ ul {
   font-size: 16px;
   margin-bottom: 20px;
   display: block;
-}
-
-.link {
-  display: inline-block;
-  border: 1px solid #999;
-  border-radius: 2px;
-  color: #111;
-  font-size: 16px;
-  padding: 11px 20px;
-  text-align: center;
-  margin-bottom: 20px;
-  &:hover {
-    border-color: #333333;
-    color: #111;
-  }
 }

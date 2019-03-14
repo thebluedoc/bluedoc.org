@@ -1,22 +1,24 @@
 import React from "react"
-import { withIntl } from '../i18n'
+import classnames from 'classnames/bind';
 
+import { withIntl } from '../i18n'
 import Layout from "../layout"
 import SEO from "../components/seo"
-import cn from './pricing.module.scss';
+import styles from './pricing.module.scss';
+
+const cx = classnames.bind(styles)
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Pricing" keywords={['bluedoc, pricing']} />
-    <section class='wrap-container'>
-      <h1 class={cn.title}>Blue Doc 产品定价</h1>
-      <p>在线体验</p>
-      <div class={cn.wrap}>
-        <div class={`${cn.cell} ${cn.box}`}>
-          <h2 class={cn.type}>BASIC</h2>
-          <b class={cn.price}>Free</b>
-          <a class={cn.link}> 立即开始 </a>
-          <ul class={cn.list}>
+    <section className='wrap-container'>
+      <h1 className={cx('title')}>Blue Doc 产品定价</h1>
+      <div className={cx('wrap')}>
+        <div className={cx('cell', 'box')}>
+          <h2 className={cx('type')}>BASIC</h2>
+          <b className={cx('price')}>Free</b>
+          <a className={cx('btn')}> 立即开始 </a>
+          <ul className={cx('list')}>
             <li>最大用户数量不限</li>
             <li>无限的团队、知识库创建</li>
             <li>多人参与维护团队、知识库</li>
@@ -32,11 +34,11 @@ const IndexPage = () => (
             <li>GitHub Issue 的方式技术支持</li>
           </ul>
         </div>
-        <div class={`${cn.cell} ${cn.box}`}>
-          <h2 class={cn.type}>PRO</h2>
-          <b class={cn.price}>Comming Soon</b>
-          <a class={cn.link}> 申请试用 </a>
-          <ul class={cn.list}>
+        <div className={cx('cell', 'box')}>
+          <h2 className={cx('type')}>PRO</h2>
+          <b className={cx('price')}>Comming Soon</b>
+          <a className={cx('btn')}> 申请试用 </a>
+          <ul className={cx('list')}>
             <li><b>包含上面 Basic 的所有功能</b></li>
             <li>PDF 导出文档、笔记以及整个知识库</li>
             <li>Zip 导出知识库（以类似 GitBook 的结构导出 Markdown 文档）</li>

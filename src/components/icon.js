@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Icon = ({name, className = ''}) => (
-  <svg className={`icon ${className}`}>
-    <use xlinkHref={`#icon${name}`} />
+const Icon = ({name, className = '', ...attrs}) => (
+  <svg className={`icon ${className}`} {...attrs}>
+    <use xlinkHref={`#icon-${name}`} />
   </svg>
 )
 
