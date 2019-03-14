@@ -1,13 +1,13 @@
-import React from "react"
-import PropTypes from "prop-types"
-import { injectIntl } from 'react-intl'
+import React from "react";
+import PropTypes from "prop-types";
+import { injectIntl } from "react-intl";
 
-import 'normalize.css'
-import './global.scss'
-import '../styles/index.scss'
+import "normalize.css";
+import "./global.scss";
+import "../styles/index.scss";
 
-import Header from "../components/header"
-import Footer from "../components/footer"
+import Header from "../components/header";
+import Footer from "../components/footer";
 
 const Layout = ({ children }) => (
   <>
@@ -15,10 +15,10 @@ const Layout = ({ children }) => (
     <main>{children}</main>
     <Footer />
   </>
-)
+);
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
+  children: PropTypes.node.isRequired
+};
 
-export default injectIntl(Layout)
+export default injectIntl(Layout);

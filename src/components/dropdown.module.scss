@@ -3,7 +3,7 @@
   font-size: 13px;
   color: #777;
   user-select: none;
-  
+
   .label {
     cursor: pointer;
     padding: 9px 0;
@@ -13,6 +13,7 @@
     margin-left: 5px;
     font-size: 10px;
     transition: all .1s ease;
+
     &.open {
       transform: rotate(180deg);
     }
@@ -45,9 +46,11 @@
     position: relative;
     text-indent: 20px;
     white-space: nowrap;
+
     &:hover {
       background: #F5F5F5;
     }
+
     .selected {
       position: absolute;
       left: 14px;

@@ -23,6 +23,7 @@ nav {
   display: flex;
   align-items: center;
   font-size: 18px;
+
   img {
     height: 50px;
     margin-right: 5px;
@@ -36,6 +37,7 @@ nav {
 .menu {
   margin-left: 10px;
   display: block;
+
   .content {
     position: fixed;
     left: 0;
@@ -47,9 +49,11 @@ nav {
     transition: all .3s ease;
     text-align: right;
     background: #fff;
+
     &.show {
       height: calc(100vh - 50px);
     }
+
     .link {
       display: block;
       padding: 5px 0;
@@ -62,9 +66,11 @@ nav {
   .wrap {
     position: static;
   }
+
   nav {
     display: block;
   }
+
   .menu {
     display: none;
   }

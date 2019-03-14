@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 
-const Icon = ({name, className = '', ...attrs}) => (
+const Icon = ({ name, className = "", ...attrs }) => (
   <svg className={`icon ${className}`} {...attrs}>
     <use xlinkHref={`#icon-${name}`} />
   </svg>
-)
+);
 
-export default Icon
+export default Icon;

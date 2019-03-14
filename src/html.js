@@ -1,5 +1,5 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
 const HTML = ({
   htmlAttributes,
@@ -7,7 +7,7 @@ const HTML = ({
   bodyAttributes,
   preBodyComponents,
   body,
-  postBodyComponents,
+  postBodyComponents
 }) => (
   <html {...htmlAttributes} lang="zh">
     <head>
@@ -36,27 +36,27 @@ HTML.propTypes = {
   htmlAttributes: PropTypes.object, // eslint-disable-line react/forbid-prop-types
   headComponents: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node,
+    PropTypes.node
   ]),
   bodyAttributes: PropTypes.object, // eslint-disable-line react/forbid-prop-types
   preBodyComponents: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node,
+    PropTypes.node
   ]),
   body: PropTypes.string,
   postBodyComponents: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node,
-  ]),
+    PropTypes.node
+  ])
 };
 
 HTML.defaultProps = {
-  body: '',
+  body: "",
   htmlAttributes: {},
   headComponents: null,
   bodyAttributes: {},
   preBodyComponents: null,
-  postBodyComponents: null,
+  postBodyComponents: null
 };
 
 export default HTML;

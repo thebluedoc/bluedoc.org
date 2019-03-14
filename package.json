@@ -43,5 +43,10 @@
   },
   "bugs": {
     "url": "https://github.com/thebluedoc/bluedoc.org/issues"
+  },
+  "devDependencies": {
+    "eslint-plugin-prettier": "^3.0.1",
+    "gatsby-plugin-eslint": "^2.0.4",
+    "prettier": "^1.16.4"
   }
 }

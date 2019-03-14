@@ -5,11 +5,13 @@
     display: flex;
     justify-content: space-between;
   }
+
   .box {
     &:not(:last-child) {
       margin-right: 80px;
     }
   }
+
   .cell {
     width: 0;
     flex: 1;
@@ -24,6 +26,7 @@
   padding: 20px 50px;
   border: 1px solid #e0e0e0;
   margin-bottom: 30px;
+
   ul {
     padding: 0;
     list-style-position: inside;
@@ -40,6 +43,7 @@
   line-height: 1.5;
   font-size: 13px;
   color: #666;
+
   li {
     margin-bottom: 10px;
   }

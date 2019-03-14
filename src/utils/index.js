@@ -1,8 +1,8 @@
-export const languageSuffix = (language) => {
+export const languageSuffix = language => {
   switch (language) {
-    case 'zh':
-      return '-cn'
+    case "zh":
+      return "-cn";
     default:
-      return ''
+      return "";
   }
-}
+};

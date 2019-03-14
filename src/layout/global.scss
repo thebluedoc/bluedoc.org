@@ -14,7 +14,7 @@ a:visited,
 a:hover,
 a:active {
   text-decoration: none;
-  color:inherit;
+  color: inherit;
 }
 
 a:hover {
@@ -48,11 +48,12 @@ main {
 
 body {
   font-family: 'themefont', 'PingFang SC', 'Microsoft YaHei', '微软雅黑', 'Helvetica Neue', Helvetica,
-  'Hiragino Sans GB', Arial, sans-serif;
+    'Hiragino Sans GB', Arial, sans-serif;
 }
 
 .icon {
-  width: 1em; height: 1em;
+  width: 1em;
+  height: 1em;
   vertical-align: -0.15em;
   fill: currentColor;
   overflow: hidden;
