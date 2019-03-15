@@ -3,30 +3,30 @@
  *
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
-const path = require('path')
-const { languages } = require('./src/i18n/locales')
+const path = require("path");
+const { languages } = require("./src/i18n/locales");
 
 exports.onCreatePage = ({ page, actions }) => {
-  const { createPage, deletePage } = actions
+  const { createPage, deletePage } = actions;
 
-  if (page.path.includes('404')) {
-    return Promise.resolve()
+  if (page.path.includes("404")) {
+    return Promise.resolve();
   }
 
   return new Promise(resolve => {
-    const redirect = path.resolve('src/i18n/redirect.js')
+    const redirect = path.resolve("src/i18n/redirect.js");
     const redirectPage = {
       ...page,
       component: redirect,
       context: {
         languages,
-        locale: '',
+        locale: "",
         routed: false,
-        redirectPage: page.path,
-      },
-    }
-    deletePage(page)
-    createPage(redirectPage)
+        redirectPage: page.path
+      }
+    };
+    deletePage(page);
+    createPage(redirectPage);
 
     languages.forEach(({ value }) => {
       const localePage = {
@@ -37,12 +37,12 @@ exports.onCreatePage = ({ page, actions }) => {
           languages,
           locale: value,
           routed: true,
-          originalPath: page.path,
-        },
-      }
-      createPage(localePage)
-    })
+          originalPath: page.path
+        }
+      };
+      createPage(localePage);
+    });
 
-    resolve()
-  })
-}
+    resolve();
+  });
+};
