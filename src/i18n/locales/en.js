@@ -8,6 +8,11 @@ module.exports = {
     SignUp: "Sign Up",
     Feedback: "Feedback"
   },
+  Footer: {
+    Help: "Help",
+    About: "About BlueDoc",
+    Feedback: "Feedback"
+  },
   Home: {
     Section1: {
       Title: "BlueDoc, Your One-Stop File \nManagement Platform",
@@ -83,10 +88,6 @@ module.exports = {
         "Take your work under control. Register now to start your free trial. Support multiple devices.",
       Btn: "Get Start"
     }
-  },
-  Footer: {
-    Help: "Help",
-    About: "About BlueDoc"
   },
   Pricing: {
     Title: "BlueDoc Professional",

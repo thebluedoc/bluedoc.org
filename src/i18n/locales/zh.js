@@ -8,6 +8,11 @@ module.exports = {
     SignUp: "注册",
     Feedback: "反馈"
   },
+  Footer: {
+    Help: "帮助",
+    About: "关于 BlueDoc",
+    Feedback: "反馈"
+  },
   Home: {
     Section1: {
       Title: "优雅高效\n轻松编写、分享、管理文档",
@@ -81,10 +86,6 @@ module.exports = {
         "只需几分钟即可掌控您的未来工作。现在注册开始，他是免费的，适用于许多设备",
       Btn: "开始"
     }
-  },
-  Footer: {
-    Help: "帮助",
-    About: "关于 BlueDoc"
   },
   Pricing: {
     Title: "BlueDoc 专业版",

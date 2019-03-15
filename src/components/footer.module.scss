@@ -1,0 +1,26 @@
+.wrap {
+  background: #F2F4F5;
+}
+
+.footer {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.link {
+  display: inline-block;
+  color: #666;
+  margin-bottom: 15px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .links {
+    float: right;
+  }
+  .link {
+    margin-bottom: 0;
+  }
+}
