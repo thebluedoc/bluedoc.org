@@ -9,6 +9,8 @@ import "../styles/index.scss";
 import Header from "../components/header";
 import Footer from "../components/footer";
 
+global.Intl = require("intl");
+
 const Layout = ({ children }) => (
   <>
     <Header />

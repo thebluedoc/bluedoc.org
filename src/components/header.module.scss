@@ -1,7 +1,6 @@
 .wrap {
   background: #fff;
-  position: sticky;
-  top: 0;
+  user-select: none;
 }
 
 .header {
@@ -12,14 +11,19 @@
 
 .cell {
   flex: 1;
+  display: none;
 }
 
 nav {
   display: none;
 }
 
+.language {
+  display: none;
+}
+
 .logo {
-  margin-right: 60px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   font-size: 18px;
@@ -32,33 +36,35 @@ nav {
 
 .link {
   margin-right: 30px;
+  color: #111;
 }
 
 .menu {
-  margin-left: 10px;
   display: block;
+  position: absolute;
+}
 
-  .content {
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 50px;
-    z-index: 999;
-    overflow-y: hidden;
-    height: 0;
-    transition: all .3s ease;
-    text-align: right;
-    background: #fff;
-
-    &.show {
-      height: calc(100vh - 50px);
-    }
-
-    .link {
-      display: block;
-      padding: 5px 0;
-      margin-top: 10px;
-    }
+.content {
+  overflow: hidden;
+  height: 0;
+  width: 100%;
+  transition: all .3s ease;
+  text-align: left;
+  background: #fff;
+  padding: 0 30px;
+  box-sizing: border-box;
+  touch-action: none;
+  &.show {
+    padding-top: 20px;
+    height: calc(100vh - 50px);
+  }
+  .link {
+    touch-action: auto;
+    font-size: 14px;
+    display: block;
+    padding: 10px 0;
+    border-bottom: 1px solid #AAA;
+    margin-right: 0;
   }
 }
 
@@ -73,5 +79,18 @@ nav {
 
   .menu {
     display: none;
+  }
+
+  .logo {
+    margin-right: 60px;
+    margin-left: 0;
+  }
+
+  .cell {
+    display: block;
+  }
+
+  .language {
+    display: block;
   }
 }

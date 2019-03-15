@@ -12,13 +12,14 @@ const HTML = ({
   <html {...htmlAttributes} lang="zh">
     <head>
       <meta charSet="utf-8" />
-      <meta httpEquiv="x-ua-compatible" content="ie=edge" />
+      <meta httpEquiv="X-UA-Compatible" content="IE=edge,chrome=1" />
       <meta
         name="viewport"
         content="width=device-width, initial-scale=1, shrink-to-fit=no"
       />
       {headComponents}
       <script src="/iconfont.js" />
+      {/* <script src="/vconsole.min.js" /> */}
     </head>
     <body {...bodyAttributes}>
       {preBodyComponents}
@@ -29,6 +30,7 @@ const HTML = ({
       />
       {postBodyComponents}
     </body>
+    {/* <script>var vConsole = new VConsole();</script> */}
   </html>
 );
 

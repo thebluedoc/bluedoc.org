@@ -10,6 +10,8 @@ import Language from "./language";
 import styles from "./header.module.scss";
 import logo from "../images/logo.png";
 
+import Modal from "./modal";
+
 const menuLinks = [
   // {
   //   name: 'Enterprise',
@@ -35,79 +37,21 @@ class Header extends PureComponent {
     language: PropTypes.object
   };
 
-  ToggleMenu = () =>
+  ToggleMenu = () => {
     this.setState({
       showMenu: !this.state.showMenu
     });
+  };
 
   render() {
     const { showMenu } = this.state;
     return (
       <header className={cx("wrap")}>
         <div className={cx("wrap-container", "header")}>
-          <Link to="/" className={cx("logo")}>
-            <img src={logo} alt="logo" />
-            <span
-              style={{
-                color: "#165eff"
-              }}
-            >
-              {" "}
-              Blue{" "}
-            </span>{" "}
-            <span
-              style={{
-                color: "#8b96ad"
-              }}
-            >
-              {" "}
-              Doc{" "}
-            </span>{" "}
-          </Link>{" "}
-          <nav className={cx("nav")}>
-            {" "}
-            {menuLinks.map(({ link, name }) => (
-              <Link
-                className={cx("link")}
-                key={link}
-                to={link}
-                activeClassName="active"
-              >
-                <FormattedMessage id={`Header.${name}`} />{" "}
-              </Link>
-            ))}{" "}
-            <a
-              className={cx("link")}
-              href={`https://bluedoc.io/bluedoc/help${this.suffix}`}
-              target="_blank"
-            >
-              <FormattedMessage id="Header.Help" />
-            </a>{" "}
-            <a
-              className={cx("link")}
-              href="https://github.com/thebluedoc/bluedoc-feedback/issues/new"
-              target="_blank"
-            >
-              <FormattedMessage id="Header.Feedback" />
-            </a>{" "}
-            <a
-              className={cx("link")}
-              href={`https://bluedoc.io/bluedoc/help${this.suffix}/about`}
-              target="_blank"
-            >
-              <FormattedMessage id="Header.About" />
-            </a>{" "}
-          </nav>{" "}
-          <div className={cx("cell")}> </div> <Language />
           <div className={cx("menu")}>
-            <Icon name="menu" onClick={this.ToggleMenu} />{" "}
-            <div
-              className={cx("content", {
-                show: showMenu
-              })}
-            >
-              <div className="wrap-container">
-                {" "}
+            <Icon name="menu" onClick={this.ToggleMenu} />
+            <Modal show={showMenu} ToggleShow={this.ToggleMenu}>
+              <div className={cx("content", { show: showMenu })}>
                 {menuLinks.map(({ link, name }) => (
                   <Link
                     className={cx("link")}
@@ -115,34 +59,76 @@ class Header extends PureComponent {
                     to={link}
                     activeClassName="active"
                   >
-                    <FormattedMessage id={`Header.${name}`} />{" "}
+                    <FormattedMessage id={`Header.${name}`} />
                   </Link>
-                ))}{" "}
+                ))}
                 <a
                   className={cx("link")}
                   href={`https://bluedoc.io/bluedoc/help${this.suffix}`}
                   target="_blank"
                 >
                   <FormattedMessage id="Header.Help" />
-                </a>{" "}
+                </a>
                 <a
                   className={cx("link")}
                   href="https://github.com/thebluedoc/bluedoc-feedback/issues/new"
                   target="_blank"
                 >
                   <FormattedMessage id="Header.Feedback" />
-                </a>{" "}
+                </a>
                 <a
                   className={cx("link")}
                   href={`https://bluedoc.io/bluedoc/help${this.suffix}/about`}
                   target="_blank"
                 >
                   <FormattedMessage id="Header.About" />
-                </a>{" "}
-              </div>{" "}
-            </div>{" "}
-          </div>{" "}
-        </div>{" "}
+                </a>
+              </div>
+            </Modal>
+          </div>
+          <Link to="/" className={cx("logo")}>
+            <img src={logo} alt="logo" />
+            <span style={{ color: "#165eff" }}>{"Blue"}</span>
+            <span style={{ color: "#8b96ad" }}>{"Doc"}</span>
+          </Link>
+          <nav className={cx("nav")}>
+            {menuLinks.map(({ link, name }) => (
+              <Link
+                className={cx("link")}
+                key={link}
+                to={link}
+                activeClassName="active"
+              >
+                <FormattedMessage id={`Header.${name}`} />
+              </Link>
+            ))}
+            <a
+              className={cx("link")}
+              href={`https://bluedoc.io/bluedoc/help${this.suffix}`}
+              target="_blank"
+            >
+              <FormattedMessage id="Header.Help" />
+            </a>
+            <a
+              className={cx("link")}
+              href="https://github.com/thebluedoc/bluedoc-feedback/issues/new"
+              target="_blank"
+            >
+              <FormattedMessage id="Header.Feedback" />
+            </a>
+            <a
+              className={cx("link")}
+              href={`https://bluedoc.io/bluedoc/help${this.suffix}/about`}
+              target="_blank"
+            >
+              <FormattedMessage id="Header.About" />
+            </a>
+          </nav>
+          <div className={cx("cell")} />
+          <div className={cx("language")}>
+            <Language />
+          </div>
+        </div>
       </header>
     );
   }

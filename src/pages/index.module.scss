@@ -44,6 +44,19 @@ h3.title {
 }
 
 .section1,
+.section7 {
+  :global {
+    .btn {
+      display: block;
+      width: 100%;
+      @media (min-width: 768px) {
+        width: 280px;
+      }
+    }
+  }
+}
+
+.section1,
 .section2,
 .section3,
 .section4,
@@ -53,12 +66,6 @@ h3.title {
   padding-top: 80px;
   padding-bottom: 80px;
   text-align: center;
-  :global {
-    .btn {
-      display: block;
-      width: 280px;
-    }
-  }
 }
 
 .section2,

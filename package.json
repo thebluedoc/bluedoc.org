@@ -32,7 +32,7 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby clean && gatsby build",
-    "start": "gatsby develop",
+    "start": "gatsby develop --host=0.0.0.0",
     "serve": "gatsby serve",
     "deploy": "npm run build && gh-pages -d public",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
@@ -48,6 +48,7 @@
     "eslint-plugin-prettier": "^3.0.1",
     "gatsby-plugin-eslint": "^2.0.4",
     "gatsby-plugin-google-analytics": "^2.0.17",
-    "prettier": "^1.16.4"
+    "prettier": "^1.16.4",
+    "vconsole": "^3.3.0"
   }
 }
