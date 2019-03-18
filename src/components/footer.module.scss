@@ -1,15 +1,16 @@
 .wrap {
-  background: #F2F4F5;
+  background: #2E384C;
+  color: rgba(255,255,255, 0.6);
 }
 
 .footer {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .link {
   display: inline-block;
-  color: #666;
+  color: inherit;
   margin-bottom: 15px;
   &:not(:last-child) {
     margin-right: 30px;

@@ -31,3 +31,15 @@
     border-color: #9BBAFF;
   }
 }
+
+.btn-primary-fill {
+  border-color: transparent;
+  background: $primary;
+  color: $white;
+  box-shadow: 0px 3px 6px 0px rgba(76, 132, 255, 0.14);
+  &:hover {
+    border-color: transparent;
+    background: #6092FF;
+    color: $white!important;
+  }
+}

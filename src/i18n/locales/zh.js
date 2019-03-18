@@ -90,8 +90,8 @@ module.exports = {
   Pricing: {
     Title: "BlueDoc 专业版",
     TitleDes: "开始使用 BlueDoc 构建你企业的私有化文档平台",
-    Des:
-      "在您决定购买之前，可以先尝试使用我们的在线服务，里面涵盖了所有专业版功能。",
+    Des: "在您决定购买之前，可以先体验涵盖了所有专业版功能的BlueDoc在线试用版",
+    Link: "在线试用版",
     Features: "功能支持",
     Service: "服务",
     Basic: {

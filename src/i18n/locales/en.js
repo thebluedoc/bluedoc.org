@@ -95,6 +95,7 @@ module.exports = {
       "Start using BlueDoc now to constrcut your own enterprise document platform",
     Des:
       "Before purchasing our product, you can try our online version first. The online version has all pro features. ",
+    Link: "Online Trial",
     Features: "Features",
     Service: "Service",
     Basic: {

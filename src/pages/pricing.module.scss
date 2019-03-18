@@ -1,33 +1,38 @@
 @import '../styles/variable.scss';
 
 .wrap {
-  padding-top: 60px;
+  padding-top: 50px;
   padding-bottom: 100px;
   color: #111;
   text-align: center;
-  background: url('../images/pricing/bg-mask.png') 0 0 no-repeat;
-  background-size: 100% auto;
 }
 
 .title {
   font-size: 36px;
-  margin-top: 0;
-  margin-bottom: 15px;
+  margin-top: 17px;
+  margin-bottom: 10px;
+}
+
+.subTitle {
+  color: #777;
+  font-size: 16px;
+  margin-bottom: 10px;
 }
 
 .des {
-  color: #777;
+  color: #999;
+  font-size: 12px;
+  margin-bottom: 30px;
+}
 
-  a {
-    color: #111;
-
-    &:hover {
-      color: $primary;
-    }
+a {
+  color: #111;
+  &:hover {
+    color: $primary;
   }
 }
 
-.box-wrap {
+.boxWrap {
   padding: 60px 0;
 }
 
@@ -39,9 +44,23 @@
   margin-bottom: 30px;
   width: 100%;
   box-sizing: border-box;
-
+  position: relative;
+  overflow: hidden;
   &.pro {
     box-shadow: 0px 0px 20px #ECECEC;
+    &::after {
+      content: "Pro";
+      display: block;
+      top: -7px;
+      right: -32px;
+      position: absolute;
+      transform: rotate(45deg);
+      width: 100px;
+      padding-top: 25px;
+      height: 25px;
+      background: #81D8D3;
+      color: #fff;
+    }
   }
 }
 
@@ -53,10 +72,8 @@
   color: #666;
   line-height: 1.4;
   margin-top: 0;
-
   &:not(:last-child) {
     margin-bottom: 40px;
-
     li {
       position: relative;
       padding-left: 15px;
@@ -88,14 +105,14 @@
 
 .type {
   font-size: 24px;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 
 .price {
   color: $primary;
   font-weight: normal;
   font-size: 28px;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   display: block;
 }
 
@@ -111,4 +128,9 @@
     width: 360px;
     margin: 0 30px;
   }
+}
+
+.bold {
+  font-weight: bold;
+  color: #111;
 }

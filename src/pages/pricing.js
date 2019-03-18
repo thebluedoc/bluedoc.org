@@ -7,6 +7,8 @@ import Layout from "../layout";
 import SEO from "../components/seo";
 import styles from "./pricing.module.scss";
 
+import logo from "../images/logo.svg";
+
 const cx = classnames.bind(styles);
 
 const IndexPage = () => (
@@ -14,18 +16,19 @@ const IndexPage = () => (
     <SEO title="Pricing" keywords={["bluedoc, pricing"]} />
     <div className={cx("wrap")}>
       <section className={cx("wrap-container")}>
+        <img className={cx("logo")} src={logo} />
         <h1 className={cx("title")}>
           <FormattedMessage id="Pricing.Title" />
         </h1>
-        <p className={cx("des")} style={{ fontSize: 17, marginBottom: 60 }}>
+        <p className={cx("subTitle")}>
           <FormattedMessage id="Pricing.TitleDes" />
         </p>
-        <p className={cx("des")} style={{ fontSize: 14, marginBottom: 40 }}>
+        <p className={cx("des")}>
           <FormattedMessage id="Pricing.Des" />
-          <a href="https://bluedoc.io" target="_blank">
-            {"（https://bluedoc.io）"}
-          </a>
         </p>
+        <a className={cx("btn")} href="https://bluedoc.io" target="_blank">
+          <FormattedMessage id="Pricing.Link" />
+        </a>
         <div className={cx("boxWrap")}>
           <div className={cx("box")}>
             <h2 className={cx("type")}>
@@ -38,7 +41,7 @@ const IndexPage = () => (
               href="https://hub.docker.com/r/bluedoc/bluedoc"
               target="_blank"
               className={cx("btn", "btn-primary")}
-              style={{ marginBottom: 60 }}
+              style={{ marginBottom: 56, width: "100%" }}
             >
               <FormattedMessage id="Pricing.Basic.Button" />
             </a>
@@ -72,8 +75,8 @@ const IndexPage = () => (
             </b>
             <a
               href="mailto:support@bluedoc.org"
-              className={cx("btn", "btn-primary")}
-              style={{ marginBottom: 60 }}
+              className={cx("btn", "btn-primary-fill")}
+              style={{ marginBottom: 56, width: "100%" }}
             >
               <FormattedMessage id="Pricing.Pro.Button" />
             </a>
@@ -82,7 +85,10 @@ const IndexPage = () => (
                 <FormattedMessage id="Pricing.Features" />
               </h3>
               {[...Array(6).fill(0)].map((i, index) => (
-                <li key={`pro-features-${index}`}>
+                <li
+                  key={`pro-features-${index}`}
+                  className={cx({ bold: index === 0 })}
+                >
                   <FormattedMessage id={`Pricing.Pro.Features.${index}`} />
                 </li>
               ))}
