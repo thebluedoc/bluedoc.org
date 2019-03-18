@@ -74,7 +74,7 @@ const IndexPage = () => (
               <FormattedMessage id="Pricing.Pro.Price" />
             </b>
             <a
-              href="mailto:support@bluedoc.org"
+              href="/contact/"
               className={cx("btn", "btn-primary-fill")}
               style={{ marginBottom: 56, width: "100%" }}
             >

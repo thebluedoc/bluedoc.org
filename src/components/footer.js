@@ -46,6 +46,7 @@ class Footer extends PureComponent {
               {"GitHub"}
             </a>
           </div>
+
           <span className={cn.copyright}>
             {"© 2019 Bluedoc. All rights reserved."}
           </span>

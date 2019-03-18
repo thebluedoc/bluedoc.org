@@ -1,6 +1,6 @@
 .wrap {
-  background: #2E384C;
-  color: rgba(255,255,255, 0.6);
+  background: #2e384c;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .footer {
@@ -8,8 +8,13 @@
   padding-bottom: 30px;
 }
 
+.links {
+  border-bottom: 1px solid rgba(151, 151, 151, 0.2);
+  margin-bottom: 20px;
+}
+
 .link {
-  display: inline-block;
+  display: block;
   color: inherit;
   margin-bottom: 15px;
   &:not(:last-child) {
@@ -17,11 +22,18 @@
   }
 }
 
+.copyright {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 @media (min-width: 768px) {
   .links {
     float: right;
+    border-bottom: none;
+    margin-bottom: 0;
   }
   .link {
+    display: inline-block;
     margin-bottom: 0;
   }
 }
