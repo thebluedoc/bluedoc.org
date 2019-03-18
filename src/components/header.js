@@ -49,7 +49,10 @@ class Header extends PureComponent {
       <header className={cx("wrap")}>
         <div className={cx("wrap-container", "header")}>
           <div className={cx("menu")}>
-            <Icon name="menu" onClick={this.ToggleMenu} />
+            <Icon
+              name={showMenu ? "cancel" : "menu"}
+              onClick={this.ToggleMenu}
+            />
             <Modal show={showMenu} ToggleShow={this.ToggleMenu}>
               <div className={cx("content", { show: showMenu })}>
                 {menuLinks.map(({ link, name }) => (
