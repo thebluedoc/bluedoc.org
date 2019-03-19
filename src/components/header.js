@@ -127,7 +127,6 @@ class Header extends PureComponent {
               <FormattedMessage id="Header.About" />
             </a>
           </nav>
-          <div className={cx("cell")} />
           <div className={cx("language")}>
             <Language />
           </div>

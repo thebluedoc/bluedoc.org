@@ -27,7 +27,7 @@ class Dropdown extends React.PureComponent {
   handleToggleOpen = () => this.setState({ open: !this.state.open });
 
   render() {
-    const { options = [], desLabel } = this.props;
+    const { options = [], desLabel, dropdownStyles = {} } = this.props;
     const { open } = this.state;
     const curText = options.find(v => v.value === this.state.value).text;
     return (
@@ -36,7 +36,10 @@ class Dropdown extends React.PureComponent {
           {curText}
           <Icon className={`${cn.arrow} ${open ? cn.open : ""}`} name="down" />
         </div>
-        <ul className={`${cn.optionsBox} ${open ? "" : cn.hidden}`}>
+        <ul
+          className={`${cn.optionsBox} ${open ? "" : cn.hidden}`}
+          style={dropdownStyles}
+        >
           {desLabel && <label className={cn.des}>{desLabel}</label>}
           {options.map(({ value, text }) => (
             <li

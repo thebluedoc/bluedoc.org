@@ -7,6 +7,7 @@
   display: flex;
   align-items: center;
   height: 50px;
+  position: relative;
 }
 
 .cell {
@@ -19,7 +20,8 @@ nav {
 }
 
 .language {
-  display: none;
+  position: absolute;
+  right: 20px;
 }
 
 .logo {
@@ -84,13 +86,5 @@ nav {
   .logo {
     margin-right: 60px;
     margin-left: 0;
-  }
-
-  .cell {
-    display: block;
-  }
-
-  .language {
-    display: block;
   }
 }

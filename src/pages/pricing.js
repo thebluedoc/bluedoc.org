@@ -27,7 +27,7 @@ const IndexPage = () => (
           <FormattedMessage id="Pricing.Des" />
         </p>
         <a
-          className={cx("btn", "btn-dark")}
+          className={cx("btn", "btn-dark", "small")}
           href="https://bluedoc.io"
           target="_blank"
         >

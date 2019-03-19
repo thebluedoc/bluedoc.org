@@ -42,6 +42,7 @@ class Language extends PureComponent {
         options={languages}
         value={value}
         desLabel={"Language"}
+        dropdownStyles={{ right: 0, left: "auto" }}
       />
     );
   }
