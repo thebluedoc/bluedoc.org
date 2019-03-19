@@ -26,7 +26,11 @@ const IndexPage = () => (
         <p className={cx("des")}>
           <FormattedMessage id="Pricing.Des" />
         </p>
-        <a className={cx("btn")} href="https://bluedoc.io" target="_blank">
+        <a
+          className={cx("btn", "btn-dark")}
+          href="https://bluedoc.io"
+          target="_blank"
+        >
           <FormattedMessage id="Pricing.Link" />
         </a>
         <div className={cx("boxWrap")}>
@@ -40,7 +44,7 @@ const IndexPage = () => (
             <a
               href="https://hub.docker.com/r/bluedoc/bluedoc"
               target="_blank"
-              className={cx("btn", "btn-primary")}
+              className={cx("btn", "btn-primary", "large")}
               style={{ marginBottom: 56, width: "100%" }}
             >
               <FormattedMessage id="Pricing.Basic.Button" />
@@ -75,7 +79,7 @@ const IndexPage = () => (
             </b>
             <a
               href="/contact/"
-              className={cx("btn", "btn-primary-fill")}
+              className={cx("btn", "btn-primary-fill", "large")}
               style={{ marginBottom: 56, width: "100%" }}
             >
               <FormattedMessage id="Pricing.Pro.Button" />

@@ -46,21 +46,21 @@ a {
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
-  &.pro {
+  &:hover {
     box-shadow: 0px 0px 20px #ECECEC;
-    &::after {
-      content: "Pro";
-      display: block;
-      top: -7px;
-      right: -32px;
-      position: absolute;
-      transform: rotate(45deg);
-      width: 100px;
-      padding-top: 25px;
-      height: 25px;
-      background: #81D8D3;
-      color: #fff;
-    }
+  }
+  &.pro::after {
+    content: "Pro";
+    display: block;
+    top: -7px;
+    right: -32px;
+    position: absolute;
+    transform: rotate(45deg);
+    width: 100px;
+    padding-top: 25px;
+    height: 25px;
+    background: #81D8D3;
+    color: #fff;
   }
 }
 
@@ -88,6 +88,13 @@ a {
         position: absolute;
         top: 7px;
         left: 0;
+      }
+    }
+    .bold {
+      font-weight: bold;
+      color: #111;
+      &::before {
+        background: #505050;
       }
     }
   }
@@ -128,9 +135,4 @@ a {
     width: 360px;
     margin: 0 30px;
   }
-}
-
-.bold {
-  font-weight: bold;
-  color: #111;
 }
