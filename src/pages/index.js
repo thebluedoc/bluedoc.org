@@ -82,11 +82,6 @@ const IndexPage = () => (
           </div>
         </section>
         <section className={`wrap-container ${cx("section3")}`}>
-          <Img
-            className={cx("banner")}
-            imgStyle={{ objectFit: "contain" }}
-            fluid={data.banner3.childImageSharp.fluid}
-          />
           <ul>
             <li>
               <h3 className={cx("title")}>
@@ -113,6 +108,11 @@ const IndexPage = () => (
               </p>
             </li>
           </ul>
+          <Img
+            className={cx("banner")}
+            imgStyle={{ objectFit: "contain" }}
+            fluid={data.banner3.childImageSharp.fluid}
+          />
         </section>
         <section className={cx("section4")}>
           <div className="wrap-container ">

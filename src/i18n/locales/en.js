@@ -15,7 +15,7 @@ module.exports = {
   },
   Home: {
     Section1: {
-      Title: "BlueDoc, Your One-Stop File \nManagement Platform",
+      Title: "BlueDoc, Your One-Stop File Management Platform",
       SubTitle:
         "BlueDoc is an enterprise file management platform that allows sharing, creating and editing your files with your co-workers in real time. ",
       Btn: "Get Start"
