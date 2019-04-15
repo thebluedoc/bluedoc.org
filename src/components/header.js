@@ -85,7 +85,7 @@ class Header extends PureComponent {
             </a>{" "}
             <a
               className={cx("link")}
-              href="https://github.com/thebluedoc/bluedoc-feedback/issues/new"
+              href="https://bluedoc.io/bluedoc/help-cn/issues/new"
               target="_blank"
             >
               <FormattedMessage id="Header.Feedback" />
